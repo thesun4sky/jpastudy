@@ -1,4 +1,4 @@
-package util;
+package me.whitebear.jpastudy.util;
 
 
 import java.sql.Connection;
@@ -16,7 +16,8 @@ public class JDBCUtil {
       //MySql
       // Class.forName("com.mysql.cj.jdbc.Driver"); 원래 driver 를 명시해줘야 하지만 이젠 자동으로 됨
 
-      return DriverManager.getConnection("jdbc:postgresql://localhost:5432/messenger", "teasun",
+      return DriverManager.getConnection(
+          "jdbc:postgresql://localhost:5432/messenger", "teasun",
           "pass");
     } catch (Exception e) {
       e.printStackTrace();

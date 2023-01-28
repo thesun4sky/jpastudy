@@ -1,4 +1,4 @@
-package jdbc.vo;
+package me.whitebear.jpastudy.jdbc.vo;
 
 
 public class AccountVO {
