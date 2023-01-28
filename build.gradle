@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'me.whitebear'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JAVA 안에 JDBC 는 기본적으로 들어있어서 추가 불필요
+
+
+
+    // JUNIT 테스트를 위한 기본 의존성
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
