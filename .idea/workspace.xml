@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(init) : init project">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ApplicationTest.java" afterDir="false" />
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +30,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KubernetesApiPersistence">
@@ -78,13 +78,36 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ApplicationTest.jdbcTest">
+  <component name="RunManager" selected="Gradle.ApplicationTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="jpastudy.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="ApplicationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ApplicationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="ApplicationTest.jdbcTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -132,6 +155,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ApplicationTest" />
         <item itemvalue="Gradle.ApplicationTest.jdbcTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Gradle.jpastudy [dependencies]" />
@@ -147,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674871445405</updated>
       <workItem from="1674871447765" duration="584000" />
-      <workItem from="1674872050712" duration="3809000" />
+      <workItem from="1674872050712" duration="5679000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init) : init project">
       <created>1674872084870</created>
@@ -156,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674872084870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기">
+      <created>1674880701877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674880701877</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +206,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(init) : init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(init) : init project" />
+    <MESSAGE value="feat(1day) : JDBC 로 DB 연결하기" />
+    <MESSAGE value="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -187,6 +220,12 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="this.cause" custom="java.sql.SQLException" />
+        <watch expression="result" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
