@@ -41,6 +41,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
+    // 8. RawJPA 적용을 위한 의존성
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
 
 test {

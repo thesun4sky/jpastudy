@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : MyBatisTest 추가 (코드 소개만)">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/GroupRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/group/repository/GroupRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis/configuration/DBConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis/configuration/DBConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +106,9 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "actions.on.save"
   },
   "keyToStringList": {
@@ -118,17 +130,19 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.whitebear.jpastudy.user.repository" />
       <recent name="me.whitebear.jpastudy" />
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.whitebear.jpastudy.group.repository" />
       <recent name="me.whitebear.jpastudy.mybatis.mapper" />
       <recent name="me.whitebear.jpastudy.jdbc" />
       <recent name="jdbc.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MyBatisTest">
-    <configuration name="JDBCTemplateTest.sqlMapper_JDBCTemplateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserRepositoryTest.joinGroupTest">
+    <configuration name="GroupRepositoryTest.insertSelectGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.jdbc.JDBCTemplateTest.sqlMapper_JDBCTemplateTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.group.repository.GroupRepositoryTest.insertSelectGroupTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +165,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="JDBCTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +178,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.jdbc.JDBCTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -174,7 +188,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyBatisTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest.insertUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -187,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.mybatis.MyBatisTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.insertUserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,7 +211,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyBatisTest.sqlMapper_MyBatisTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest.joinGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -210,7 +224,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.mybatis.MyBatisTest.sqlMapper_MyBatisTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.joinGroupTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,25 +234,23 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MyBatisTest.sqlMapper_MyBatisV2Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="jpastudy [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.mybatis.MyBatisTest.sqlMapper_MyBatisV2Test&quot;" />
+            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -252,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MyBatisTest" />
-        <item itemvalue="Gradle.JDBCTemplateTest.sqlMapper_JDBCTemplateTest" />
-        <item itemvalue="Gradle.JDBCTest" />
-        <item itemvalue="Gradle.MyBatisTest.sqlMapper_MyBatisV2Test" />
-        <item itemvalue="Gradle.MyBatisTest.sqlMapper_MyBatisTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.joinGroupTest" />
+        <item itemvalue="Gradle.GroupRepositoryTest.insertSelectGroupTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.insertUserTest" />
+        <item itemvalue="Gradle.UserRepositoryTest" />
+        <item itemvalue="Gradle.jpastudy [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +281,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674871445405</updated>
       <workItem from="1674871447765" duration="584000" />
-      <workItem from="1674872050712" duration="24032000" />
+      <workItem from="1674872050712" duration="33550000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init) : init project">
       <created>1674872084870</created>
@@ -334,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674911110857</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat(1day) : MyBatisTest 추가 (코드 소개만)">
+      <created>1674911401736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674911401736</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,15 +381,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : MyBatisTest 추가 (코드 소개만)" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/Application.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="this.cause" custom="java.sql.SQLException" />
