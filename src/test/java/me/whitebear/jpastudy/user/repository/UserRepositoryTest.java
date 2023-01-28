@@ -38,6 +38,20 @@ class UserRepositoryTest {
   }
 
   @Test
+  void updateUserTest() {
+    // given
+    var savedUser = userRepository.insertUser(TEST_USER);
+
+    // when
+    savedUser.updateUserName("new_user_name");
+    var updatedUser = userRepository.updateUser(savedUser);
+
+    // then
+    var foundUser = userRepository.selectUser(updatedUser.getId());
+    assert foundUser.getUsername().equals(updatedUser.getUsername());
+  }
+
+  @Test
   void joinGroupTest() {
     // given
     var savedUser = userRepository.insertUser(TEST_USER);

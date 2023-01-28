@@ -51,4 +51,12 @@ public class User {
     this.group = group;
     group.addUser(this);
   }
+
+  public void updateUserName(String username) {
+    this.username = username;
+  }
+
+  public void updatePassword(String password) {
+    this.password = password;
+  }
 }
