@@ -10,8 +10,13 @@ repositories {
 }
 
 dependencies {
-    // JAVA 안에 JDBC 는 기본적으로 들어있어서 추가 불필요
+    // 1. JAVA 안에 JDBC 는 기본적으로 들어있어서 추가 불필요
 
+    // 2. Docker DB 생성
+    // docker run -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=teasun -e POSTGRES_DB=messenger --name postgres_boot -d postgres
+
+    // 3. PostgreSQL 의존성 추가
+    implementation 'org.postgresql:postgresql:42.2.2'
 
 
     // JUNIT 테스트를 위한 기본 의존성
