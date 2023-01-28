@@ -16,8 +16,10 @@ dependencies {
     // docker run -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=teasun -e POSTGRES_DB=messenger --name postgres_boot -d postgres
 
     // 3. PostgreSQL 의존성 추가
-    implementation 'org.postgresql:postgresql:42.2.2'
+    implementation 'org.postgresql:postgresql:42.2.27'
 
+    // 4. SpringBoot 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.7'
 
     // JUNIT 테스트를 위한 기본 의존성
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
