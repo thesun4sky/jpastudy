@@ -1,6 +1,7 @@
 package me.whitebear.jpastudy.user;
 
-import me.whitebear.jpastudy.channel.ChannelRepository;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,8 +16,24 @@ class UserRepositoryTest {
   @Autowired
   private UserRepository userRepository;
 
-  @Autowired
-  private ChannelRepository channelRepository;
+  @PersistenceContext
+  private EntityManager entityManager;
+
+  @Test
+  void insertUserTest() {
+    // given
+    User TEST_USER = User.builder().username("test_user").password("pass").build();
+
+    // when
+    entityManager.persist(TEST_USER);
+
+    entityManager.flush();
+    // entityManager.clear(); // 1차 캐시 확인
+
+    // then
+    User foundUser = entityManager.find(User.class, TEST_USER.getId());
+    assert !foundUser.getUsername().isEmpty();
+  }
 
   @Test
   void insertSelectUserTest() {

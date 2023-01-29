@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)">
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/userchannel/UserChannelRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/userchannel/UserChannelRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,30 +141,7 @@
       <recent name="me.whitebear.jpastudy.mybatis.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.jpastudy [dependencies]">
-    <configuration name="GroupRepositoryTest.insertSelectGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.group.repository.GroupRepositoryTest.insertSelectGroupTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.UserRepositoryTest.insertUserTest">
     <configuration name="UserChannelRepositoryTest.userJoinChannelTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -236,6 +211,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="UserRepositoryTest.insertUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.whitebear.jpastudy.user.UserRepositoryTest.insertUserTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="jpastudy [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -266,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserRepositoryTest.insertUserTest" />
         <item itemvalue="Gradle.jpastudy [dependencies]" />
         <item itemvalue="Gradle.UserChannelRepositoryTest.userJoinChannelWithCascadeTest" />
         <item itemvalue="Gradle.UserChannelRepositoryTest.userJoinChannelTest" />
         <item itemvalue="Gradle.UserRepositoryTest" />
-        <item itemvalue="Gradle.GroupRepositoryTest.insertSelectGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +283,7 @@
       <workItem from="1674871447765" duration="584000" />
       <workItem from="1674872050712" duration="44707000" />
       <workItem from="1674970522926" duration="239000" />
-      <workItem from="1674970773838" duration="3243000" />
+      <workItem from="1674970773838" duration="3935000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init) : init project">
       <created>1674872084870</created>
@@ -392,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674971344226</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선">
+      <created>1674975908578</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674975908578</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +427,8 @@
     <MESSAGE value="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원 &amp; Spring 버전업" />
     <MESSAGE value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
     <MESSAGE value="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)" />
+    <MESSAGE value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
