@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +63,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -112,10 +111,10 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "spring.configuration.checksum": "1ed837652b92b8789d962bed578bf20f"
   },
   "keyToStringList": {
@@ -139,6 +138,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.whitebear.jpastudy.channel" />
       <recent name="me.whitebear.jpastudy.user.repository" />
       <recent name="me.whitebear.jpastudy" />
       <recent name="" />
@@ -151,13 +151,36 @@
       <recent name="me.whitebear.jpastudy.mybatis.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.jpastudy [compileQuerydsl]">
+  <component name="RunManager" selected="Gradle.ChannelJpaRepositoryTest.queryDslTest">
+    <configuration name="ChannelJpaRepositoryTest.queryDslTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.whitebear.jpastudy.channel.ChannelJpaRepositoryTest.queryDslTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="jpastudy [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -215,7 +238,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="jpastudy [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="jpastudy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -225,30 +248,7 @@
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="compileTestJava" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="jpastudy [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
           <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -266,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.jpastudy [compileQuerydsl]" />
+        <item itemvalue="Gradle.ChannelJpaRepositoryTest.queryDslTest" />
         <item itemvalue="Gradle.jpastudy [compileJava]" />
-        <item itemvalue="Gradle.jpastudy [compileTestJava]" />
-        <item itemvalue="Gradle.jpastudy [dependencies]" />
         <item itemvalue="Gradle.jpastudy [build]" />
+        <item itemvalue="Gradle.jpastudy [compileQuerydsl]" />
+        <item itemvalue="Gradle.jpastudy" />
       </list>
     </recent_temporary>
   </component>
@@ -413,7 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675013488711</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013727199</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013727199</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가">
+      <created>1675017397441</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675017397441</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,15 +458,26 @@
     <MESSAGE value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
     <MESSAGE value="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)" />
     <MESSAGE value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
-    <MESSAGE value="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)" />
+    <MESSAGE value="feat(2day) : QueryDSL 의존성 추가" />
+    <MESSAGE value="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/channel/ChannelJpaRepositoryTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="this.cause" custom="java.sql.SQLException" />
         <watch expression="result" />
         <watch expression="generatedKeys.next()" />
+        <watch expression="optional.get()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -7,7 +7,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import lombok.AccessLevel;
@@ -24,7 +23,6 @@ import me.whitebear.jpastudy.userchannel.UserChannel;
 
 // JPA
 @Entity
-@Table(name = "channel")
 public class Channel {
 
   @Id
