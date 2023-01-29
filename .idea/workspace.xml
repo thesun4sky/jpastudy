@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/userchannel/UserChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/userchannel/UserChannelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/userchannel/UserChannelRepositoryTest.java" afterDir="false" />
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/ChannelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/channel/Channel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/group/repository/GroupRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/channel/ChannelRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/UserRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +16,8 @@
   </component>
   <component name="ChangesViewManager">
     <option name="groupingKeys">
-      <option value="module" />
       <option value="directory" />
+      <option value="module" />
     </option>
   </component>
   <component name="ExternalProjectsData">
@@ -114,7 +107,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1ed837652b92b8789d962bed578bf20f&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -291,6 +285,8 @@
       <updated>1674871445405</updated>
       <workItem from="1674871447765" duration="584000" />
       <workItem from="1674872050712" duration="44707000" />
+      <workItem from="1674970522926" duration="239000" />
+      <workItem from="1674970773838" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init) : init project">
       <created>1674872084870</created>
@@ -383,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674964517678</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가">
+      <created>1674970597938</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674970597938</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,18 +414,10 @@
     <MESSAGE value="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가" />
     <MESSAGE value="feat(1day) : RawJPA merge() 업데이트 테스트 추가" />
     <MESSAGE value="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원 &amp; Spring 버전업" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원 &amp; Spring 버전업" />
+    <MESSAGE value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/userchannel/UserChannelRepositoryTest.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="this.cause" custom="java.sql.SQLException" />

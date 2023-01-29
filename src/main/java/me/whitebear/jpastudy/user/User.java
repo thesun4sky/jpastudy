@@ -7,7 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -53,7 +53,7 @@ public class User {
    */
   @OneToMany
   @Exclude
-  private Set<UserChannel> userChannel = new HashSet<>();
+  private Set<UserChannel> userChannel = new LinkedHashSet<>(); // LinkedHashSet 은 중복방지 & 순서보장
 
   /**
    * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
