@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가">
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : RawJPA merge() 업데이트 테스트 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/GroupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/group/GroupRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/jdbc/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/jdbc/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis/MyBatisTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/repository/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mappings/AccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mappings/AccountMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+      <option value="directory" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -95,7 +107,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy/src/test/resources",
+    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy/src/main/java/me/whitebear/jpastudy",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -112,6 +124,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis" />
     </key>
@@ -128,36 +141,14 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.whitebear.jpastudy.account.mapper.vo" />
       <recent name="me.whitebear.jpastudy.group.repository" />
       <recent name="me.whitebear.jpastudy.mybatis.mapper" />
       <recent name="me.whitebear.jpastudy.jdbc" />
       <recent name="jdbc.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRepositoryTest.updateUserTest">
-    <configuration name="GroupRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.group.repository.GroupRepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'me.whitebear.jpastudy'">
     <configuration name="GroupRepositoryTest.insertSelectGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -181,7 +172,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.insertUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JDBCTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +185,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.insertUserTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.jdbc.JDBCTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,7 +195,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.joinGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'me.whitebear.jpastudy'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -217,7 +208,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.joinGroupTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -227,7 +218,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.updateUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -240,7 +231,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.updateUserTest&quot;" />
+            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRepositoryTest.insertSelectUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest.insertSelectUserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -259,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserRepositoryTest.updateUserTest" />
-        <item itemvalue="Gradle.GroupRepositoryTest" />
-        <item itemvalue="Gradle.UserRepositoryTest.joinGroupTest" />
+        <item itemvalue="Gradle.Tests in 'me.whitebear.jpastudy'" />
+        <item itemvalue="Gradle.UserRepositoryTest" />
         <item itemvalue="Gradle.GroupRepositoryTest.insertSelectGroupTest" />
-        <item itemvalue="Gradle.UserRepositoryTest.insertUserTest" />
+        <item itemvalue="Gradle.JDBCTest" />
+        <item itemvalue="Gradle.UserRepositoryTest.insertSelectUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +290,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674871445405</updated>
       <workItem from="1674871447765" duration="584000" />
-      <workItem from="1674872050712" duration="34507000" />
+      <workItem from="1674872050712" duration="39474000" />
     </task>
     <task id="LOCAL-00001" summary="feat(init) : init project">
       <created>1674872084870</created>
@@ -355,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674929790943</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat(1day) : RawJPA merge() 업데이트 테스트 추가">
+      <created>1674930737472</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674930737472</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +402,8 @@
     <MESSAGE value="feat(1day) : JDBC Template 로 Insert, Select 실습" />
     <MESSAGE value="feat(1day) : MyBatisTest 추가 (코드 소개만)" />
     <MESSAGE value="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가" />
+    <MESSAGE value="feat(1day) : RawJPA merge() 업데이트 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : RawJPA merge() 업데이트 테스트 추가" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

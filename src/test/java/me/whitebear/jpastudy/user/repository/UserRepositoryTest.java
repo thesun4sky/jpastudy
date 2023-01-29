@@ -15,10 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Rollback(value = false)
 class UserRepositoryTest {
 
-  private static final User TEST_USER = User.builder().username("new_user").password("pass")
-      .build();
-  private static final Group TEST_GROUP = Group.builder().name("new_group").build();
-
   @Autowired
   private UserRepository userRepository;
 
@@ -28,6 +24,8 @@ class UserRepositoryTest {
   @Test
   void insertSelectUserTest() {
     // given
+    var TEST_USER = User.builder().username("new_user").password("pass")
+        .build();
 
     // when
     var savedUser = userRepository.insertUser(TEST_USER);
@@ -40,6 +38,8 @@ class UserRepositoryTest {
   @Test
   void updateUserTest() {
     // given
+    var TEST_USER = User.builder().username("new_user").password("pass")
+        .build();
     var savedUser = userRepository.insertUser(TEST_USER);
 
     // when
@@ -54,6 +54,9 @@ class UserRepositoryTest {
   @Test
   void joinGroupTest() {
     // given
+    var TEST_USER = User.builder().username("new_user").password("pass")
+        .build();
+    var TEST_GROUP = Group.builder().name("new_group").build();
     var savedUser = userRepository.insertUser(TEST_USER);
     var newGroup = groupRepository.insertGroup(TEST_GROUP);
 

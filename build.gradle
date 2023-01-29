@@ -1,7 +1,7 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.7.7'
-    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+    id 'org.springframework.boot' version '3.0.1'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group 'me.whitebear'
@@ -20,7 +20,7 @@ dependencies {
     // docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=pass --name mysql_boot -d mysql
 
     // 3. PostgreSQL 의존성 추가
-    implementation 'org.postgresql:postgresql:42.2.27'
+    implementation 'org.postgresql:postgresql'
 
     // 4. SpringBoot 의존성 추가
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -34,7 +34,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // 6. MyBatis 실습을 위한 의존성
-    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
+    testCompileClasspath 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.1'
     runtimeOnly 'org.postgresql:postgresql'
 
     // 7. 개발편의를 위한 Lombok 의존성 추가

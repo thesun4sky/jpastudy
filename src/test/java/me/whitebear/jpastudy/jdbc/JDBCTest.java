@@ -15,6 +15,15 @@ public class JDBCTest {
   @DisplayName("JDBC DB 연결 실습")
   void jdbcTest() throws SQLException {
     // given
+
+    // docker exec -i -t postgres_boot bash
+    // su - postgres
+    // psql --username teasun --dbname messenger
+    // \list (데이터 베이스 조회)
+    // \dt (테이블 조회)
+
+    // IntelliJ Database 에서도 조회
+
     String url = "jdbc:postgresql://localhost:5432/messenger";
     String username = "teasun";
     String password = "pass";
@@ -36,13 +45,7 @@ public class JDBCTest {
     }
 
     // then
-    // docker exec -i -t postgres_boot bash
-    // su - postgres
-    // psql --username teasun --dbname messenger
-    // \list (데이터 베이스 조회)
-    // \dt (테이블 조회)
-
-    // IntelliJ Database 에서도 조회
+    // DB 테이블 생성 확인
   }
 
   @Test

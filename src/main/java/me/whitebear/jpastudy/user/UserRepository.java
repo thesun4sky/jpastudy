@@ -1,9 +1,9 @@
 package me.whitebear.jpastudy.user;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.PersistenceContext;
 import java.util.Objects;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -6,7 +6,7 @@
     [템플릿 설명]
     - 해당 파일은 SQL 문을 작성하는 곳입니다.
 -->
-<mapper namespace="me.whitebear.jpastudy.mapper.AccountMapper">
+<mapper namespace="me.whitebear.jpastudy.mybatis.mapper.AccountMapper">
 
   <select id="selectAccount" resultType="me.whitebear.jpastudy.mybatis.vo.AccountMyBatisVO">
     SELECT id,
