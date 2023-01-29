@@ -14,8 +14,8 @@ spring:
 logging:
   level:
     org.hibernate.sql: debug
-    org.hibernate.type: trace # 쿼리 변수 출력
-
+    org.hibernate.type: trace
+ 
 
 # Mybatis 설정
 mybatis:

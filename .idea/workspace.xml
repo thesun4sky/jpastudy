@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선">
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/user/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jpastudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -74,6 +80,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="wev-dm@cd1" />
   </component>
@@ -99,7 +108,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy/src/main/java/me/whitebear/jpastudy",
+    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy/src/test/java/me/whitebear/jpastudy",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -117,6 +126,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy" />
       <recent name="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis" />
@@ -141,95 +151,87 @@
       <recent name="me.whitebear.jpastudy.mybatis.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserRepositoryTest.insertUserTest">
-    <configuration name="UserChannelRepositoryTest.userJoinChannelTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.jpastudy [compileQuerydsl]">
+    <configuration name="jpastudy [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.userchannel.UserChannelRepositoryTest.userJoinChannelTest&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserChannelRepositoryTest.userJoinChannelWithCascadeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="jpastudy [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.userchannel.UserChannelRepositoryTest.userJoinChannelWithCascadeTest&quot;" />
+            <option value="compileJava" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="jpastudy [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--stacktrace" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.user.repository.UserRepositoryTest&quot;" />
+            <option value="compileQuerydsl" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserRepositoryTest.insertUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="jpastudy [compileTestJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.whitebear.jpastudy.user.UserRepositoryTest.insertUserTest&quot;" />
+            <option value="compileTestJava" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -264,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UserRepositoryTest.insertUserTest" />
+        <item itemvalue="Gradle.jpastudy [compileQuerydsl]" />
+        <item itemvalue="Gradle.jpastudy [compileJava]" />
+        <item itemvalue="Gradle.jpastudy [compileTestJava]" />
         <item itemvalue="Gradle.jpastudy [dependencies]" />
-        <item itemvalue="Gradle.UserChannelRepositoryTest.userJoinChannelWithCascadeTest" />
-        <item itemvalue="Gradle.UserChannelRepositoryTest.userJoinChannelTest" />
-        <item itemvalue="Gradle.UserRepositoryTest" />
+        <item itemvalue="Gradle.jpastudy [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -397,7 +399,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674975908578</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013385742</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013385742</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013488711</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013488711</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +444,8 @@
     <MESSAGE value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
     <MESSAGE value="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)" />
     <MESSAGE value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
+    <MESSAGE value="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
