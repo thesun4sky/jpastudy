@@ -46,4 +46,25 @@ class UserChannelRepositoryTest {
         .map(Channel::getName)
         .anyMatch(name -> name.equals(TEST_CHANNEL.getName()));
   }
+
+  @Test
+  @DisplayName("채널에 유저가입 테스트 (with Cascade)")
+  void userJoinChannelWithCascadeTest() {
+    // given
+    var TEST_USER = User.builder().username("new_user").password("pass")
+        .build();
+    var TEST_CHANNEL = Channel.builder().name("new_group").build();
+    var savedUser = userRepository.insertUser(TEST_USER);
+
+    // when
+    TEST_CHANNEL.joinUser(savedUser);
+    channelRepository.insertChannel(TEST_CHANNEL);
+
+    // then
+    var foundUser = userRepository.selectUser(savedUser.getId());
+    assert foundUser.getUserChannel().stream()
+        .map(UserChannel::getChannel)
+        .map(Channel::getName)
+        .anyMatch(name -> name.equals(TEST_CHANNEL.getName()));
+  }
 }

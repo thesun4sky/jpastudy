@@ -1,5 +1,6 @@
 package me.whitebear.jpastudy.channel;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -40,6 +41,13 @@ public class Channel {
   }
 
   /**
+   * 연관관계 - Foreign Key 값을 따로 컬럼으로 정의하지 않고 연관 관계로 정의합니다.
+   */
+  @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL)
+  @Exclude
+  private Set<UserChannel> userChannels = new LinkedHashSet<>();
+
+  /**
    * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
    */
   public UserChannel joinUser(User user) {
@@ -48,12 +56,5 @@ public class Channel {
     user.getUserChannel().add(userChannel);
     return userChannel;
   }
-
-  /**
-   * 연관관계 - Foreign Key 값을 따로 컬럼으로 정의하지 않고 연관 관계로 정의합니다.
-   */
-  @OneToMany(mappedBy = "channel")
-  @Exclude
-  private Set<UserChannel> userChannels = new LinkedHashSet<>();
 
 }
