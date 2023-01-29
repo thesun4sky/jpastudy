@@ -1,9 +1,6 @@
-package me.whitebear.jpastudy.user.repository;
+package me.whitebear.jpastudy.user;
 
-import me.whitebear.jpastudy.group.Group;
-import me.whitebear.jpastudy.group.GroupRepository;
-import me.whitebear.jpastudy.user.User;
-import me.whitebear.jpastudy.user.UserRepository;
+import me.whitebear.jpastudy.channel.ChannelRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,7 +16,7 @@ class UserRepositoryTest {
   private UserRepository userRepository;
 
   @Autowired
-  private GroupRepository groupRepository;
+  private ChannelRepository channelRepository;
 
   @Test
   void insertSelectUserTest() {
@@ -51,20 +48,4 @@ class UserRepositoryTest {
     assert foundUser.getUsername().equals(updatedUser.getUsername());
   }
 
-  @Test
-  void joinGroupTest() {
-    // given
-    var TEST_USER = User.builder().username("new_user").password("pass")
-        .build();
-    var TEST_GROUP = Group.builder().name("new_group").build();
-    var savedUser = userRepository.insertUser(TEST_USER);
-    var newGroup = groupRepository.insertGroup(TEST_GROUP);
-
-    // when
-    savedUser.setGroup(newGroup);
-
-    // then
-    var savedGroup = groupRepository.selectGroup(newGroup.getId());
-    assert savedGroup.getUsers().contains(savedUser);
-  }
 }
