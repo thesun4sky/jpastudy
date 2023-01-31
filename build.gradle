@@ -1,22 +1,61 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.0.1'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group 'me.whitebear'
 version '1.0-SNAPSHOT'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    // JAVA 안에 JDBC 는 기본적으로 들어있어서 추가 불필요
+    // 1. JAVA 안에 JDBC 는 기본적으로 들어있어서 추가 불필요
 
+    // 2. Docker DB 생성 (Postgres)
+    // docker run -p 5432:5432 -e POSTGRES_PASSWORD=pass -e POSTGRES_USER=teasun -e POSTGRES_DB=messenger --name postgres_boot -d postgres
+    // mysql 로 하고싶으면 아래처럼
+    // docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=pass --name mysql_boot -d mysql
 
+    // 3. PostgreSQL 의존성 추가
+    implementation 'org.postgresql:postgresql'
+
+    // 4. SpringBoot 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
     // JUNIT 테스트를 위한 기본 의존성
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // 5. JDBC Template 등.. Spring 의존성을 받기위한 의존성
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // 6. MyBatis 실습을 위한 의존성
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
+    testCompileClasspath 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.1'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    // 7. 개발편의를 위한 Lombok 의존성 추가
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // 8. RawJPA 적용을 위한 의존성
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // 9. QueryDSL 적용을 위한 의존성 (SpringBoot3.0 부터는 jakarta 사용해야함)
+    implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+    annotationProcessor "jakarta.annotation:jakarta.annotation-api"
+    annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 }
 
 test {

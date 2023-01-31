@@ -4,34 +4,92 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="8bfcd700-8198-4ce9-993e-64141b37aacd" name="Changes" comment="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jpastudy" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jpastudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jpastudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jpastudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="wev-dm@cd1" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2Kw2hcvN9igFDwFYdzR77j9RoHn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -41,10 +99,181 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/teasun.kim/study/jpastudy/src/test/java/me/whitebear/jpastudy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "spring.configuration.checksum": "1ed837652b92b8789d962bed578bf20f"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy" />
+      <recent name="$PROJECT_DIR$/src/main/java/me/whitebear/jpastudy" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/mybatis" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.whitebear.jpastudy.channel" />
+      <recent name="me.whitebear.jpastudy.user.repository" />
+      <recent name="me.whitebear.jpastudy" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.whitebear.jpastudy.channel" />
+      <recent name="me.whitebear.jpastudy.userchannel" />
+      <recent name="me.whitebear.jpastudy.account.mapper.vo" />
+      <recent name="me.whitebear.jpastudy.group.repository" />
+      <recent name="me.whitebear.jpastudy.mybatis.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ChannelJpaRepositoryTest.queryDslTest">
+    <configuration name="ChannelJpaRepositoryTest.queryDslTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.whitebear.jpastudy.channel.ChannelJpaRepositoryTest.queryDslTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jpastudy [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jpastudy [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jpastudy [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileQuerydsl" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="jpastudy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jpastudy.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="me.whitebear.jpastudy.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ChannelJpaRepositoryTest.queryDslTest" />
+        <item itemvalue="Gradle.jpastudy [compileJava]" />
+        <item itemvalue="Gradle.jpastudy [build]" />
+        <item itemvalue="Gradle.jpastudy [compileQuerydsl]" />
+        <item itemvalue="Gradle.jpastudy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,8 +283,151 @@
       <option name="presentableId" value="Default" />
       <updated>1674871445405</updated>
       <workItem from="1674871447765" duration="584000" />
-      <workItem from="1674872050712" duration="11000" />
+      <workItem from="1674872050712" duration="44707000" />
+      <workItem from="1674970522926" duration="239000" />
+      <workItem from="1674970773838" duration="3935000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(init) : init project">
+      <created>1674872084870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674872084870</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기">
+      <created>1674880701877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674880701877</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(1day) : JDBC 로 Insert, Select 실습">
+      <created>1674893294731</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674893294731</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(1day) : JDBC 로 Insert, Select 실습">
+      <created>1674895818362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674895818362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(1day) : JDBC DAO 로 Insert, Select 실습">
+      <created>1674896128877</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674896128877</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(1day) : JDBC DAO 로 Insert, Select 실습">
+      <created>1674896285404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674896285404</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(1day) : JDBC Template 로 Insert, Select 실습">
+      <created>1674903734053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674903734053</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(1day) : MyBatisTest 추가 (코드 소개만)">
+      <created>1674910976261</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674910976261</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(1day) : MyBatisTest 추가 (코드 소개만)">
+      <created>1674911110857</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674911110857</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(1day) : MyBatisTest 추가 (코드 소개만)">
+      <created>1674911401736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674911401736</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가">
+      <created>1674929790943</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674929790943</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(1day) : RawJPA merge() 업데이트 테스트 추가">
+      <created>1674930737472</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674930737472</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원">
+      <created>1674964517678</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674964517678</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가">
+      <created>1674970597938</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674970597938</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)">
+      <created>1674971344226</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674971344226</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선">
+      <created>1674975908578</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674975908578</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013385742</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013385742</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013488711</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013488711</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat(2day) : QueryDSL 의존성 추가 (SpringBoot 3.0 기준)">
+      <created>1675013727199</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675013727199</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가">
+      <created>1675017397441</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1675017397441</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +443,46 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(init) : init project" />
+    <MESSAGE value="feat(1day) : JDBC 로 DB 연결하기" />
+    <MESSAGE value="feat(1day) : JDBC 로 DB 연결하기 &amp; Docker DB 띄우고 연결하기" />
+    <MESSAGE value="feat(1day) : JDBC 로 Insert, Select 실습" />
+    <MESSAGE value="feat(1day) : JDBC DAO 로 Insert, Select 실습" />
+    <MESSAGE value="feat(1day) : JDBC Template 로 Insert, Select 실습" />
+    <MESSAGE value="feat(1day) : MyBatisTest 추가 (코드 소개만)" />
+    <MESSAGE value="feat(1day) : RawJPA 클래스 추가 및 실습 테스트 추가" />
+    <MESSAGE value="feat(1day) : RawJPA merge() 업데이트 테스트 추가" />
+    <MESSAGE value="fix(1day) : MyBatis 테스트 정리 및 전체 테스트 복원 &amp; Spring 버전업" />
+    <MESSAGE value="feat(1day) : User-Channel 다대다 관계 설정 &amp; 채널 유저 가입 테스트 추가" />
+    <MESSAGE value="fix(1day) : Set 타입을 LinkedHashSet 으로 변경 (순서유지)" />
+    <MESSAGE value="feat(1day) : Cascade 설정을 통해 유저의 채널가입 개선" />
+    <MESSAGE value="feat(2day) : QueryDSL 의존성 추가" />
+    <MESSAGE value="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(2day) : SpringBoot 3.0 기준으로 수정 &amp; QueryDSL 테스트 추가" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/whitebear/jpastudy/channel/ChannelJpaRepositoryTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="this.cause" custom="java.sql.SQLException" />
+        <watch expression="result" />
+        <watch expression="generatedKeys.next()" />
+        <watch expression="optional.get()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
